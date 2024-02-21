@@ -43,7 +43,7 @@ h6 {
 
 h1 {
     font-size: 64px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 h2 {
@@ -53,7 +53,7 @@ h2 {
 
 h3 {
     font-size: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 
 ol,
@@ -138,19 +138,30 @@ img {
 }
 
 /* Footer styles */
+/* Mobile responsiveness */
 .footer {
     text-align: center;
     background: #2b2b2b;
     color: #fff;
-    padding: 20px;
+    padding: 16px;
 }
 
 .footer .copyright {
-    font-size: 14px;
+    font-size: 10px;
+}
+
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer .copyright {
+        font-size: 14px;
+    }
 }
 
 /* Hero screen styles */
-
 /* Mobile responsiveness */
 .hero {
     display: flex;
@@ -169,7 +180,7 @@ img {
 
 .hero p {
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -195,24 +206,16 @@ img {
 }
 
 /* Hero screen styles for the Rotterdam page */
+/* Mobile responsiveness */
 .hero_rotterdam {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #2b2b2b;
     background-image: url("../images/rotterdam-panorama.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 890px;
-    color: #fff;
-    text-align: center;
-    padding: 10% 20%;
 }
 
-.hero_rotterdam p {
-    padding-top: 20px;
-    font-size: 24px;
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .hero_rotterdam {
+        height: 880px;
+    }
 }
 
 /* Video afout Rotterdam settings */
@@ -226,16 +229,38 @@ img {
 }
 
 /* Basic articles styles */
+/* Mobile responsiveness */
 .article {
     display: flex;
     flex-direction: column;
     color: #2b2b2b;
     text-align: center;
-    padding: 5% 20%;
+    padding: 50px;
 }
 
 .article p {
-    padding-top: 20px;
+    font-size: 14px;
+}
+
+.article h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .article {
+        padding: 150px 20%;
+    }
+
+    .article p {
+        font-size: 20px;
+    }
+
+    .article h2 {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
 }
 
 /* Styles for the gallery images */
