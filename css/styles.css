@@ -42,8 +42,8 @@ h6 {
 }
 
 h1 {
-    font-size: 56px;
-    margin-bottom: 50px;
+    font-size: 64px;
+    margin-bottom: 80px;
 }
 
 h2 {
@@ -111,11 +111,6 @@ img {
     color: #f16900;
 }
 
-/* Settings for the logotype */
-.header_logo {
-    margin-top: 6px;
-}
-
 .header_logo img {
     width: 150px;
 }
@@ -125,7 +120,7 @@ img {
     border: none;
     color: white;
     background-color: #2b2b2b;
-    padding: 14px 32px;
+    padding: 12px 32px;
     text-align: center;
     font-size: 18px;
     cursor: pointer;
@@ -155,22 +150,48 @@ img {
 }
 
 /* Hero screen styles */
+
+/* Mobile responsiveness */
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #2b2b2b;
     color: #fff;
     text-align: center;
-    padding: 15% 20%;
+    padding: 50px;
     background-image: url("https://418-feedfactory.imgix.net/5ff8a3acde7e8633a4ab7dca/ff82f28f-a3e0-4392-9c54-9e30da07dbe3.jpg?fit=max&auto=format&ixlib=imgixjs-3.3.2&w=1920");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .hero p {
-    font-size: 24px;
-    /* font-weight: 500; */
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .hero {
+        padding: 15% 20%;
+    }
+
+    .hero p {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+
+    .hero h1 {
+        font-size: 64px;
+        margin-bottom: 50px;
+    }
 }
 
 /* Hero screen styles for the Rotterdam page */
@@ -183,7 +204,6 @@ img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* filter: contrast(110%); */
     height: 890px;
     color: #fff;
     text-align: center;
@@ -193,7 +213,6 @@ img {
 .hero_rotterdam p {
     padding-top: 20px;
     font-size: 24px;
-    /* font-weight: 500; */
 }
 
 /* Video afout Rotterdam settings */
@@ -261,38 +280,142 @@ img {
     padding: 100px 100px;
 }
 
-/* Styles for the tables */
-.table {
-    padding: 5%;
-    text-align: left;
-    line-height: 1.5;
-    font-size: 18px;
-
-    background-color: #00b43c;
-    border: 1px solid #2b2b2b;
-    border-collapse: collapse;
-    margin-bottom: 50px;
-}
-
-.table th,
-td {
-    padding: 20px;
-    vertical-align: text-top;
-    border: 1px solid #2b2b2b;
-    border-collapse: collapse;
-}
-
-.th {
-    background-color: #2b2b2b;
-    color: #fff;
-    text-align: center;
-}
-
 /* These classes adds space after an element or block. */
 .bottom_space_100 {
     margin-bottom: 100px;
 }
 
-.bottom_space_200 {
-    margin-bottom: 200px;
+/* Elena's index-page part styles */
+.container {
+    max-width: 1200px;
+    margin: 110px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
 }
+
+.text h2 {
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    line-height: 1.1;
+    padding: auto;
+    margin: 40px;
+}
+
+.text p {
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.row-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.container-box {
+    /*background: var(--bg-color);*/
+    height: 500px;
+    width: 320px;
+    margin: 30px;
+    border: 1px solid #f0eded;
+    padding: 50px 10px;
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+
+}
+
+.container-img img {
+    height: 180px;
+    width: 180px;
+    padding: 0px;
+    background: var(--bg-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85/20%);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.container-box h4 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 18px;
+    padding-top: 15px;
+
+}
+
+.container-box p {
+    font-size: 14px;
+    color: var(--second-color);
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.container-box:hover {
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55/12%);
+    border: 1px solid transparent;
+    transform: translateY(-3px);
+
+}
+
+/* Iryna's index-page part */
+
+.table-im {
+    margin: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(171, 171, 171);
+    border-collapse: separate;
+    border-radius: 10px;
+    border-color: #878383;
+    text-align: center;
+    font-size: 10;
+}
+
+.heading-table-im {
+    padding: 5px;
+    text-align: center;
+}
+
+.table-im th,
+td {
+    padding: 10px;
+    text-align: center;
+
+    border: none;
+    border-bottom: 1px solid #DDD;
+}
+
+.table-im tr:hover {
+    background-color: #eabf9d;
+}
+
+.table-im {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 900px) {
+    .table-im {
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .table-im {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+/* End of Iryna's index-page part */
