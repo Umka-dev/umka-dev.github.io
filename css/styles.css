@@ -25,7 +25,7 @@ ul {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -254,7 +254,7 @@ img {
     }
 
     .article p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .article h2 {
@@ -264,7 +264,7 @@ img {
 }
 
 /* Styles for the gallery images */
-.gallery {
+/* .gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -284,10 +284,10 @@ img {
     width: 100%;
     object-fit: cover;
     object-position: center;
-}
+} */
 
 /* Styles for the blocks with a text */
-.blocks {
+/* .blocks {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -303,7 +303,7 @@ img {
     width: 50%;
     background: #00b43c;
     padding: 100px 100px;
-}
+} */
 
 /* These classes adds space after an element or block. */
 .bottom_space_100 {
@@ -317,6 +317,7 @@ img {
     display: flex;
     flex-direction: column;
     padding: 0 15px;
+    text-align: center;
 }
 
 .text h2 {
@@ -337,7 +338,7 @@ img {
 
 .row-items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     grid-gap 2rem;
     align-items: center;
     text-align: center;
