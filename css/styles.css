@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 30px;
 }
 
@@ -311,7 +311,6 @@ img {
 .grid_container {
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 10px;
 }
 
 .block_wrapper {
@@ -328,11 +327,11 @@ img {
 }
 
 .block_wrapper-1 {
-    background-color: #f0eded;
+    background-color: #eaedf1;
 }
 
 .block_wrapper-2 {
-    background-color: #fff;
+    background-color: #f16900;
 }
 
 .block_container {
@@ -348,6 +347,11 @@ img {
 
     .block_wrapper {
         padding: 100px;
+        font-size: 18px;
+    }
+
+    .block_wrapper h3 {
+        font-size: 34px;
     }
 }
 
