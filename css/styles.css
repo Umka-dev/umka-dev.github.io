@@ -480,3 +480,178 @@ td {
 }
 
 /* End of Iryna's index-page part */
+
+/* Utrecht */
+/* Utrecht: Hero */
+.hero-utrecht {
+    display: flex;
+    flex-direction: column;
+    color: #fafaf0;
+    text-align: center;
+    background-image: url("../images/utrecht-hero.jpeg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat; 
+    text-shadow: 2px 2px  #000000, 0 0 25px rgb(247, 158, 80);
+    line-height: 1.8;
+    filter: contrast(88%);
+    padding: 10% 15%;
+}
+
+.hero-utrecht p{
+    font-size: 18px 
+}
+
+
+@media screen and (min-width: 900px) {
+    .hero-utrecht {
+            padding: 10% 15%;
+        }
+    .hero-utrecht p{
+            font-size: 22px 
+        }    
+}
+
+/* Utrecht: Amazing city */
+.spoiler-utrecht, .box-utrecht {
+    margin: 0px 10px 5px 10px;   
+    padding: 10px;
+}
+
+.box-utrecht {
+    text-align: center;
+    font-size: 17px;
+}
+
+.spoiler-utrecht {
+    border: 1px rgb(252, 175, 115) solid;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+.spoiler-utrecht h3{
+    text-align: center;
+}
+
+.spoiler-utrecht p {
+    font-size: 15px;
+    padding: 5px;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+@media screen and (min-width: 900px){
+    .box-utrecht {
+        margin: 0px 50px 20px 50px;   
+        padding: 10px;
+        font-size: 20px;
+    }
+    .spoiler-utrecht {
+        margin: 0px 50px 20px 50px;   
+        padding: 10px 30px;
+        font-size: 20px;
+        text-align: left;
+    }
+    .spoiler-utrecht p {
+        font-size: 17px;
+    }
+}
+
+/* Utrecht: Worth a visit */
+.h2-utrecht {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.box-utrecht {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fafaf0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+  }
+
+.img-utrecht {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px; 
+    margin: 10px;
+    border: 1px solid rgb(204, 202, 202) ;
+    border-radius: 4px;
+}
+
+.img-utrecht:hover {
+    box-shadow: 0 0 2px 1px rgb(252, 175, 115);
+} 
+
+  @media screen and (min-width: 900px){
+    .img-utrecht {
+        width: 350px;
+        height: 250px;
+      }
+}
+
+
+/* Utrecht: Castle De Haar */
+.wrapper-utrecht {
+    display: block;
+    margin: 100px auto;
+    width: 90%;
+}
+
+.up-utrecht {
+    background-color: rgb(252, 175, 115);
+    text-align: center;
+}
+
+.left-utrecht {
+    max-width: 700px;
+}
+
+.right-utrecht h2 {
+    margin: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.right-utrecht p {
+    font-size: 17px;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+    .wrapper-utrecht {
+        margin: 50px auto;
+    }
+    .left-utrecht {
+        max-width: 600px;
+        float: left;
+        margin-right: 15px;
+    }
+    .right-utrecht h2 {
+        font-size: 25px;
+    }
+    .right-utrecht p {
+        font-size: 20px;
+        text-align: justify;
+        text-indent: 20px;
+    }
+}
+/* End Utrecht */
