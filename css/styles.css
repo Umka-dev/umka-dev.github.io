@@ -446,36 +446,35 @@ img {
 }
 
 /* Iryna's index-page part */
-.table-im {
+.table {
     width: 100%;
     margin: 15px auto;
     padding: 10px 10px 5px 10px;
-    border: 1px solid #878383;
+    border: 1px solid #cfcdcd;
     border-collapse: separate;
     border-radius: 10px;
     text-align: center;
     font-size: 10px;
 }
 
-.heading-table-im {
+.heading-table {
     padding: 5px;
     text-align: center;
 }
 
-.table-im th,
+.table th,
 td {
     padding: 10px;
     border: none;
-    border-bottom: 1px solid #DDD;
 }
 
-.table-im tr:hover {
-    background-color: #eabf9d;
+.table tr:hover {
+    background-color: #f8dac4;
 }
 
 @media (min-width: 900px) {
-    .table-im {
-        font-size: 16px;
+    .table {
+        font-size: 16px; 
     }
 }
 
