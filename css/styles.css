@@ -327,7 +327,7 @@ td {
   
   .container-box{
     /*background: var(--bg-color);*/
-    height: 500px;
+    height: 567px;
     width: 320px;
     margin: 30px;
     border: 1px solid #f0eded;
@@ -360,9 +360,9 @@ td {
   }
   
   .container-box p{
-    font-size: 16px;
+    font-size: 18px;
     color: var(--second-color);
-    line-height: 24px;
+    line-height: 31px;
    font-weight: normal;
    padding: 0px 10px 0px 10px
   }
