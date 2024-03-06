@@ -454,8 +454,8 @@ img {
 .text p {
     align-items: center;
     text-align: center;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .row-items {
@@ -469,7 +469,7 @@ img {
 
 .container-box {
     /*background: var(--bg-color);*/
-    height: 500px;
+    height: 567px;
     width: 320px;
     margin: 30px;
     border: 1px solid #f0eded;
@@ -500,10 +500,11 @@ img {
 }
 
 .container-box p {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--second-color);
-    line-height: 18px;
+    line-height: 24px;
     font-weight: normal;
+    padding: 0px 10px 0px 10px
 }
 
 .container-box:hover {
