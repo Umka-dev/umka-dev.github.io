@@ -1,20 +1,31 @@
 html {
     box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-  }
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -31,8 +42,8 @@ h6 {
 }
 
 h1 {
-    font-size: 56px;
-    margin-bottom: 50px;
+    font-size: 64px;
+    margin-bottom: 60px;
 }
 
 h2 {
@@ -41,20 +52,21 @@ h2 {
 }
 
 h3 {
-    font-size: 32px;
-    margin-bottom: 32px;
+    font-size: 34px;
+    margin-bottom: 30px;
 }
-  
-  ol, ul {
+
+ol,
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-  
-  img {
+
+img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 /* Header styles */
 
@@ -62,16 +74,16 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 70px 10px 70px;
+    padding: 20px 10px;
     background-color: #fff;
 }
-@media screen and (min-width: 900px)
-{
-.header {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20 10px;
-}
+
+@media screen and (min-width: 900px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
 }
 
 .header_navigation {
@@ -79,11 +91,11 @@ h3 {
     flex-direction: column;
     align-items: center;
 }
-@media screen and (min-width: 900px)
-{
-.header_navigation {
-    flex-direction: row;
-}
+
+@media screen and (min-width: 900px) {
+    .header_navigation {
+        flex-direction: row;
+    }
 }
 
 .header_navigation a {
@@ -99,12 +111,6 @@ h3 {
     color: #f16900;
 }
 
-
-/* Settings for the logotype */
-.header_logo {
-    margin-top: 6px;
-}
-
 .header_logo img {
     width: 150px;
 }
@@ -114,12 +120,12 @@ h3 {
     border: none;
     color: white;
     background-color: #2b2b2b;
-    padding: 14px 32px;
+    padding: 10px 28px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 50px;
-   }
+}
 
 .button:hover {
     color: #f16900;
@@ -131,60 +137,98 @@ h3 {
     color: #2b2b2b;
 }
 
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .button {
+        padding: 12px 32px;
+        font-size: 18px;
+    }
+
+    .button-white {
+        padding: 12px 32px;
+        font-size: 18px;
+    }
+}
+
 /* Footer styles */
+/* Mobile responsiveness */
 .footer {
     text-align: center;
     background: #2b2b2b;
     color: #fff;
-    padding: 20px;
+    padding: 16px;
 }
 
 .footer .copyright {
-    font-size: 14px;
+    font-size: 10px;
+}
+
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer .copyright {
+        font-size: 14px;
+    }
 }
 
 /* Hero screen styles */
+/* Mobile responsiveness */
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #2b2b2b;
     color: #fff;
     text-align: center;
-    padding: 50px 10px;
+    padding: 50px;
     background-image: url("https://418-feedfactory.imgix.net/5ff8a3acde7e8633a4ab7dca/ff82f28f-a3e0-4392-9c54-9e30da07dbe3.jpg?fit=max&auto=format&ixlib=imgixjs-3.3.2&w=1920");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
 
-@media screen and (min-width: 900px) {
-.hero {
-        padding: 15% 20%;
-    }
 }
 
 .hero p {
-    font-size: 24px;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .hero {
+        padding: 15% 20%;
+    }
+
+    .hero p {
+        font-size: 24px;
+        margin-bottom: 60px;
+    }
+
+    .hero h1 {
+        font-size: 64px;
+        margin-bottom: 50px;
+    }
 }
 
 /* Hero screen styles for the Rotterdam page */
+/* Mobile responsiveness */
 .hero_rotterdam {
-    display: flex;
-    flex-direction: column;
-    background-color: #2b2b2b;
-    background-image: url("https://418-rotterdampartners.imgix.net/2022/07/ship-santos_claudenil.jpg?auto=format&fit=crop&lossless=1&w=1680");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: contrast(120%);
-    color: #fff;
-    text-align: center;
-    padding: 10% 20%;
+    background-image: url("../images/rotterdam-panorama.jpg");
 }
 
-.hero_rotterdam p {
-    padding-top: 20px;
-    font-size: 24px;
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .hero_rotterdam {
+        height: 880px;
+    }
 }
 
 /* Video afout Rotterdam settings */
@@ -198,134 +242,232 @@ h3 {
 }
 
 /* Basic articles styles */
+/* Mobile responsiveness */
 .article {
     display: flex;
     flex-direction: column;
     color: #2b2b2b;
     text-align: center;
-    padding: 5% 20%;
+    padding: 50px;
 }
 
 .article p {
-    padding-top: 20px;
+    font-size: 14px;
+}
+
+.article h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .article {
+        padding: 150px 20%;
+    }
+
+    .article p {
+        font-size: 18px;
+    }
+
+    .article h2 {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
 }
 
 /* Styles for the gallery images */
-.gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+.gallery_rotterdam {
+    display: grid;
+    grid-template-areas:
+        'img-1'
+        'img-2'
+        'img-3';
     justify-content: center;
 }
 
-.box {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
-    overflow: hidden;
-    height: 350px;
+.gallery_rotterdam-img:nth-of-type(1) {
+    grid-area: img-1;
 }
 
-.box img {
+.gallery_rotterdam-img:nth-of-type(2) {
+    grid-area: img-2;
+}
+
+.gallery_rotterdam-img:nth-of-type(3) {
+    grid-area: img-3;
+}
+
+.gallery_rotterdam-img img {
+    display: block;
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
 }
 
-/* Styles for the blocks with a text */
-.blocks {
+@media (min-width: 480px) {
+    .gallery_rotterdam {
+        grid-template-areas:
+            'img-1 img-2'
+            'img-3 img-2';
+    }
+}
+
+@media (min-width: 680px) {
+    .gallery_rotterdam {
+        grid-template-areas:
+            'img-1 img-2 img-3';
+    }
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.block_wrapper {
+    padding: 50px;
+    font-size: 14px;
+}
+
+.block_wrapper ul {
+    list-style: unset;
+}
+
+.block_wrapper h3 {
+    font-size: 30px;
+}
+
+.block_wrapper-1 {
+    background-color: #eaedf1;
+}
+
+.block_wrapper-2 {
+    background-color: #f16900;
+}
+
+.block_container {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+    .grid_container {
+        grid-template-columns: auto auto;
+    }
+
+    .block_wrapper {
+        padding: 100px;
+        font-size: 18px;
+    }
+
+    .block_wrapper h3 {
+        font-size: 34px;
+    }
+}
+
+/* Subscription form with JS code */
+.subscription_form {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: #f16900;
+    color: #2b2b2b;
+    text-align: center;
+    padding: 50px;
 }
 
-.block1 {
-    width: 50%;
-    background: #dddcdc;
-    padding: 100px 100px;
+.subscription_form h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
-.block2 {
-    width: 50%;
-    background: #00b43c;
-    padding: 100px 100px;
+.subscription_form label {
+    font-size: 14px;
 }
 
-/* Styles for the tables */
-.table {
-    padding: 5%;
-    text-align: left;
-    line-height: 1.5;
-    font-size: 18px;
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .subscription_form {
+        padding: 100px 20%;
+    }
 
-    background-color: #00b43c;
-    border: 1px solid #2b2b2b;
-    border-collapse: collapse;
+    .subscription_form h3 {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .subscription_form label {
+        font-size: 18px;
+    }
+}
+
+
+.form_input_email[type="email"] {
+    padding: 5px;
+    margin: 10px;
+    margin-bottom: 30px;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Desktop version */
+@media screen and (min-width: 900px) {
+    .form_input_email[type="email"] {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+/* These classes adds space after an element or block. */
+.bottom_space_50 {
     margin-bottom: 50px;
 }
 
-.table th,
-td {
-    padding: 20px;
-    vertical-align: text-top;
-    border: 1px solid #2b2b2b;
-    border-collapse: collapse;
+.bottom_space_100 {
+    margin-bottom: 100px;
 }
 
-.th {
-    background-color: #2b2b2b;
-    color: #fff;
-    text-align: center;
-}
-
-/* This class adds space after an element or block. */
-.bottom_space {
-    margin-bottom: 80px;
-}
-
-
-
+/* Elena's index-page part styles */
 .container {
     max-width: 1200px;
     margin: 110px auto;
     display: flex;
     flex-direction: column;
     padding: 0 15px;
-  }
-  
-  
-  .text h2{
+    text-align: center;
+}
+
+.text h2 {
     align-items: center;
     text-align: center;
     font-size: 48px;
     line-height: 1.1;
     padding: auto;
     margin: 40px;
-  }
-  
-  
-  .text p{
+}
+
+.text p {
     align-items: center;
     text-align: center;
     font-size: 18px;
-    line-height: 34px;
-    padding: 0px 50px 0px 50px;
-  }
-  
-  .row-items{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, auto));
-    grid-gap: 2rem;
+    line-height: 1.5;
+}
+
+.row-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    grid-gap 2rem;
     align-items: center;
     text-align: center;
     margin-top: 5rem;
-  }
-  
-  
-  
-  
-  .container-box{
+}
+
+.container-box {
     /*background: var(--bg-color);*/
     height: 567px;
     width: 320px;
@@ -335,10 +477,10 @@ td {
     border-radius: 4px;
     transition: all 1s ease 0s;
     cursor: pointer;
-  
-  }
-  
-  .container-img img{
+
+}
+
+.container-img img {
     height: 180px;
     width: 180px;
     padding: 0px;
@@ -347,30 +489,245 @@ td {
     border-radius: 4px;
     margin-bottom: 10px;
     cursor: pointer;
-  }
-  
-  
-        
-  .container-box h4{
+}
+
+.container-box h4 {
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 18px;
     padding-top: 15px;
-    
-  }
-  
-  .container-box p{
-    font-size: 18px;
+
+}
+
+.container-box p {
+    font-size: 16px;
     color: var(--second-color);
-    line-height: 31px;
-   font-weight: normal;
-   padding: 0px 10px 0px 10px
-  }
-  
-  .container-box:hover{
+    line-height: 24px;
+    font-weight: normal;
+    padding: 0px 10px 0px 10px
+}
+
+.container-box:hover {
     box-shadow: 5px 30px 56.1276px rgb(55 55 55/12%);
     border: 1px solid transparent;
     transform: translateY(-3px);
-    
-  }
-  
+
+}
+
+/* Iryna's index-page part */
+.table {
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px 10px 5px 10px;
+    border: 1px solid #cfcdcd;
+    border-collapse: separate;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.heading-table {
+    padding: 5px;
+    text-align: center;
+}
+
+.table th,
+td {
+    padding: 10px;
+    border: none;
+}
+
+.table tr:hover {
+    background-color: #f8dac4;
+}
+
+@media (min-width: 900px) {
+    .table {
+        font-size: 16px;
+    }
+}
+
+/* End of Iryna's index-page part */
+
+/* Utrecht */
+/* Utrecht: Hero */
+.hero-utrecht {
+    display: flex;
+    flex-direction: column;
+    color: #fafaf0;
+    text-align: center;
+    background-image: url("../images/utrecht-hero.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px #000000, 0 0 25px rgb(247, 158, 80);
+    line-height: 1.8;
+    filter: contrast(88%);
+    padding: 10% 15%;
+}
+
+.hero-utrecht p {
+    font-size: 18px
+}
+
+
+@media screen and (min-width: 900px) {
+    .hero-utrecht {
+        padding: 10% 15%;
+    }
+
+    .hero-utrecht p {
+        font-size: 22px
+    }
+}
+
+/* Utrecht: Amazing city */
+.spoiler-utrecht,
+.box-utrecht {
+    margin: 0px 10px 5px 10px;
+    padding: 10px;
+}
+
+.box-utrecht {
+    text-align: center;
+    font-size: 17px;
+}
+
+.spoiler-utrecht {
+    border: 1px rgb(252, 175, 115) solid;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+.spoiler-utrecht h3 {
+    text-align: center;
+}
+
+.spoiler-utrecht p {
+    font-size: 15px;
+    padding: 5px;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+@media screen and (min-width: 900px) {
+    .box-utrecht {
+        margin: 0px 50px 20px 50px;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .spoiler-utrecht {
+        margin: 0px 50px 20px 50px;
+        padding: 10px 30px;
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .spoiler-utrecht p {
+        font-size: 17px;
+    }
+}
+
+/* Utrecht: Worth a visit */
+.h2-utrecht {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-utrecht {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fafaf0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 10px;
+}
+
+.img-utrecht {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 4px;
+}
+
+.img-utrecht:hover {
+    box-shadow: 0 0 2px 1px rgb(252, 175, 115);
+}
+
+@media screen and (min-width: 900px) {
+    .img-utrecht {
+        width: 350px;
+        height: 250px;
+    }
+}
+
+
+/* Utrecht: Castle De Haar */
+.wrapper-utrecht {
+    display: block;
+    margin: 100px auto;
+    width: 90%;
+}
+
+.up-utrecht {
+    background-color: rgb(252, 175, 115);
+    text-align: center;
+}
+
+.left-utrecht {
+    max-width: 700px;
+}
+
+.right-utrecht h2 {
+    margin: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.right-utrecht p {
+    font-size: 17px;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+    .wrapper-utrecht {
+        margin: 50px auto;
+    }
+
+    .left-utrecht {
+        max-width: 600px;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .right-utrecht h2 {
+        font-size: 25px;
+    }
+
+    .right-utrecht p {
+        font-size: 20px;
+        text-align: justify;
+        text-indent: 20px;
+    }
+}
+
+/* End Utrecht */
