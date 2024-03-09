@@ -203,205 +203,6 @@ img {
     margin-bottom: 50px;
   }
 }
-
-/* Hero screen styles for the Rotterdam page */
-/* Mobile responsiveness */
-.hero_rotterdam {
-  background-image: url("../images/rotterdam-panorama.jpg");
-}
-
-/* Desktop version */
-@media screen and (min-width: 900px) {
-  .hero_rotterdam {
-    height: 880px;
-  }
-}
-
-/* Video afout Rotterdam settings */
-.video_rotterdam {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* Basic articles styles */
-/* Mobile responsiveness */
-.article {
-  display: flex;
-  flex-direction: column;
-  color: #2b2b2b;
-  text-align: center;
-  padding: 50px;
-}
-
-.article p {
-  font-size: 14px;
-}
-
-.article h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-/* Desktop version */
-@media screen and (min-width: 900px) {
-  .article {
-    padding: 150px 20%;
-  }
-
-  .article p {
-    font-size: 20px;
-  }
-
-  .article h2 {
-    font-size: 48px;
-    margin-bottom: 50px;
-  }
-}
-
-/* Styles for the gallery images */
-.gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.box {
-  display: flex;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-  overflow: hidden;
-  height: 350px;
-}
-
-.box img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-/* Styles for the blocks with a text */
-.blocks {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.block1 {
-  width: 50%;
-  background: #dddcdc;
-  padding: 100px 100px;
-}
-
-.block2 {
-  width: 50%;
-  background: #00b43c;
-  padding: 100px 100px;
-}
-
-/* These classes adds space after an element or block. */
-.bottom_space_100 {
-  margin-bottom: 100px;
-}
-
-/*Eman's hague-page part styles Start*/
-.about {
-  width: 100%;
-  height: 500px;
-  border: 3px solid blue;
-}
-.column {
-  float: left;
-  width: 40%;
-  padding: 0 20px;
-  margin-top: 60px;
-  margin-left: 10px;
-}
-/* Remove extra left and right margins, due to padding in columns */
-.row {
-  margin: 0 -5px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.about-image {
-  width: 100%;
-  padding: 16px;
-  margin-left: 90px;
-  margin-top: 22px;
-}
-.about-image img {
-  border-radius: 50px;
-}
-.title-h {
-  width: 105%;
-  padding: 16px;
-  margin-left: 75px;
-  margin-top: 45px;
-}
-.title-h h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-.title-h p {
-  font-size: 17px;
-  margin-top: -5px;
-  margin-left: 13px;
-  text-align: justify;
-}
-/* About screen styles for the Hague page */
-/* Mobile responsiveness */
-
-/* Desktop version */
-@media screen and (max-width: 600px) {
-  .about {
-    width: 100%;
-    height: 880px;
-    border: 3px solid blue;
-  }
-  .title-h {
-    width: 70%;
-    padding: 16px;
-    margin-left: 75px;
-    margin-top: -45px;
-  }
-  .about-image {
-    width: 100%;
-    padding: 16px;
-    margin-left: 45px;
-    margin-top: 22px;
-  }
-  .about-image img {
-    width: 80%;
-    height: 300px;
-  }
-  .title-h h2 {
-    font-size: 25px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .title-h p {
-    font-size: 15px;
-    margin-top: 20px;
-    margin-left: 2px;
-    text-align: justify;
-  }
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
 /*Eman Section*/
 /* Hero screen styles for the Hague page */
 /* Mobile responsiveness */
@@ -415,130 +216,261 @@ img {
     height: 880px;
   }
 }
-/*Eman's Hague-page part styles End*/
+/*Eman's hague-page part styles Start*/
+#aboutUs {
+  /* border: 2px solid red; */
+  padding: 20px;
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+}
 
-/*Eman Culture part  Start*/
+#aboutUs img {
+  width: 80%;
+  margin: 30px;
+  /* margin-left: 20px; */
+  border-radius: 10px;
+}
+
+.content {
+  margin: 20px 0;
+}
+
+.content h2 {
+  font-size: 50px;
+  margin-top: 30px;
+  color: #0f0e0e;
+}
+.content p {
+  text-align: justify;
+}
+
+.description {
+  color: black;
+  /* color: #fff; */
+  /* margin: 20px 0; */
+  text-align: justify;
+  margin-right: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 790px) {
+  #aboutUs img {
+    width: 80%;
+  }
+
+  #aboutUs {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+
+/*Eman Culture part End*/
 .culture {
   width: 100%;
   height: 750px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  margin-top: 80px;
 }
-.card-deck {
-  margin-top: 45px;
-  width: 90%;
-  margin-left: 55px;
+.culture p {
+  text-align: center;
+  font-size: 20px;
 }
-.card {
-  height: 420px;
-  float: left;
-  border-radius: 30px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  cursor: pointer;
+article {
+  color: black;
+  position: relative;
+  border-radius: 16px;
+  box-shadow: none;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  margin-top: 50px;
 }
-.card:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16), 0 4px 10px rgba(0, 0, 0, 0.45);
-}
-
 h1 {
   text-align: center;
   margin-top: 40px;
 }
-p {
-  font-size: 17px;
-  margin-top: -10px;
-  text-align: center;
-}
-.card img {
-  border-radius: 30px;
-  height: 200px;
-}
-
-.card-title1 {
-  margin-top: 20px;
-  font-size: 20px;
-  color: orangered;
-}
-
-.card-text1 {
-  font-size: 14px;
-  margin-top: 20px;
+.article-body p {
+  font-size: 16px;
   text-align: justify;
 }
-/*Eman Culture part End*/
 
-/*Eman Places section Start*/
-.Places {
-  height: 810px;
-  border: 2px solid blue;
+/* basic article elements styling */
+article h2 {
+  margin: 0 0 18px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+  transition: color 0.3s ease-out;
 }
-h2 {
-  text-align: center;
-  margin-top: 30px;
+
+figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
-.container {
+
+article img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.article-body {
+  padding: 24px;
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+article:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --title-color: #28666e;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.articles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  margin-top: -2px;
-}
-.container .card {
-  color: #252a32;
-  height: 300px;
-  background: #ffffff;
-  margin-top: 15px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-}
-.container .card:hover {
-  border: 1px solid #777;
-}
-.card-image {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 300px;
-  padding-top: 70%;
-  background: #9d9b9b;
-  border-radius: 30px;
-}
-.card-image img {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.card-image:hover {
-  border: 1px solid;
-}
-.desc {
-  padding: 15px;
-  text-align: center;
-  margin-top: -15px;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
 }
 
-@media only screen and (max-width: 600px) {
-  .main .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+@media screen and (max-width: 960px) {
+  article {
+    container: card/inline-size;
+  }
+  .article-body p {
+    display: none;
+  }
+  p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
   }
 }
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+  .article-body {
+    padding-left: 0;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  figure img {
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+/*Eman Places section Start*/
+
+.main {
+  /* max-width: 1200px; */
+  height: 900px;
+  margin-top: -55px;
+  /* margin: 0 auto; */
+  /* border: 2px solid blue; */
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  /* margin: 0; */
+  margin-top: 25px;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 20px;
+  width: 80%;
+  height: 370px;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card-1 {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 5px;
+  background: linear-gradient(to bottom left, #e8eaf6 40%, #ffc39e 100%);
+  /* background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%); */
+}
+
+.card_title2 {
+  color: #0d0c0c;
+  /* color: #ffffff; */
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-top: 5px;
+  text-align: center;
+  /* margin: 0px; */
+}
+
 /*Eman Places section  End*/
 
 /*Eman Testimonial  Section start*/
 
 .testimonials {
   height: 600px;
-  border: 3px solid purple;
+  /* border: 3px solid purple; */
   padding: 30px 0;
   text-align: center;
+  margin-top: 60px;
 }
 .testimonial {
-  height: 350px;
+  height: 370px;
   background-color: #eeeded;
   padding: 25px;
   margin-left: 10px;
@@ -578,7 +510,8 @@ h2 {
 }
 .testimonial p {
   font-size: 14px;
-  justify-content: center;
+  margin-top: -10px;
+  text-align: justify;
 }
 .testimonial img {
   width: 100px;
@@ -599,4 +532,16 @@ h2 {
     max-width: 80%;
   }
 }
+@media screen and (max-width: 900px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    width: 90%;
+    margin-bottom: 60px;
+  }
+}
+
 /*Eman Testimonial  Section End*/
