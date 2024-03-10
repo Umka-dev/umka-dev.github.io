@@ -207,7 +207,7 @@ img {
 /* Hero screen styles for the Hague page */
 /* Mobile responsiveness */
 .hero_hague {
-  background-image: url("../images/hague.jpg");
+  background-image: url("https://i.ibb.co/s5hNdq6/The-Hague-city.jpg");
 }
 
 /* Desktop version */
@@ -231,7 +231,11 @@ img {
   /* margin-left: 20px; */
   border-radius: 10px;
 }
-
+/* #aboutUs img {
+  width: 400px;
+  margin: 20px;
+  border-radius: 10px;
+} */
 .content {
   margin: 20px 0;
 }
@@ -241,6 +245,13 @@ img {
   margin-top: 30px;
   color: #0f0e0e;
 }
+.content h4 {
+  font-size: 20px;
+  color: #164499;
+  /* color: #fff; */
+  margin: 10px 0;
+}
+
 .content p {
   text-align: justify;
 }
@@ -255,7 +266,25 @@ img {
   line-height: 30px;
   font-weight: 100;
 }
+.btn {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.4s;
+  background-color: #615e5e;
+  margin-top: 10px;
+}
 
+.btn:hover {
+  background-image: linear-gradient(to right, orange, blue);
+  animation: slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
 @media screen and (max-width: 790px) {
   #aboutUs img {
     width: 80%;
@@ -352,7 +381,7 @@ article:has(:hover, :focus) {
   .article-body p {
     display: none;
   }
-  p {
+  article p {
     margin-left: 10px;
     margin-right: 10px;
     text-align: justify;
@@ -416,14 +445,14 @@ img {
   display: flex;
   padding: 20px;
   width: 80%;
-  height: 370px;
+  /*height: 370px;*/
 }
 
-@media (min-width: 40rem) {
+/*@media (min-width: 40rem) {
   .cards_item {
     width: 50%;
   }
-}
+}*/
 
 @media (min-width: 56rem) {
   .cards_item {
@@ -463,17 +492,22 @@ img {
 /*Eman Testimonial  Section start*/
 
 .testimonials {
-  height: 600px;
   /* border: 3px solid purple; */
   padding: 30px 0;
   text-align: center;
   margin-top: 60px;
 }
 .testimonial {
-  height: 370px;
+  height: 400px;
   background-color: #eeeded;
   padding: 25px;
   margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .testimonial {
+    height: auto;
+  }
 }
 .testimonial:hover {
   background: #dedfe0;
