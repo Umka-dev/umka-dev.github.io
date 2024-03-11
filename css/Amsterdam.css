@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  background-color: #280274;
+  background-color: #000000;
 }
 
 *,
@@ -62,7 +62,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding: 10px 10px;
-  background-color: #280274;
+  background-color: #000000;
 }
 @media screen and (min-width: 900px) {
   .header {
@@ -168,7 +168,7 @@ h3 {
 }
 
 .content .info-btn:hover {
-  color: #280274;
+  color: #000000;
   background: #e9f6ff;
 }
 
@@ -212,7 +212,7 @@ h3 {
 /*Section sights*/
 
 .sights {
-  background-color: #280274;
+  background-color: #000000;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -243,14 +243,14 @@ h3 {
 
 .card__price {
   text-decoration: none;
-  color: #280274;
+  color: #000000;
   font-size: 24px;
   font-weight: bold;
 }
 
 .card__title {
   text-decoration: none;
-  color: #280274;
+  color: #000000;
   font-size: 18px;
   font-weight: bold;
 }
@@ -271,7 +271,7 @@ h3 {
 
 .btn:hover {
   color: #f0eded;
-  background: #280274;
+  background: #000000;
 }
 
 .btn:active {
