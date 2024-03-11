@@ -19,14 +19,13 @@ h6,
 p,
 ol,
 ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
-
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
@@ -38,26 +37,25 @@ h4,
 h4,
 h5,
 h6 {
-    font-family: 'Anton', sans-serif;
-    line-height: 1.3;
-    letter-spacing: 0.05em;
+  font-family: "Anton", sans-serif;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
 }
 
 h1 {
-    font-size: 64px;
-    margin-bottom: 60px;
+  font-size: 64px;
+  margin-bottom: 60px;
 }
 
 h2 {
-    font-size: 48px;
-    margin-bottom: 42px;
+  font-size: 48px;
+  margin-bottom: 42px;
 }
 
 h3 {
-    font-size: 32px;
-    margin-bottom: 30px;
+  font-size: 32px;
+  margin-bottom: 30px;
 }
-
 
 .header {
   display: flex;
@@ -66,13 +64,12 @@ h3 {
   padding: 10px 10px;
   background-color: #280274;
 }
-@media screen and (min-width: 900px)
-{
-.header {
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20 10px;
-}
+@media screen and (min-width: 900px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20 10px;
+  }
 }
 
 .header_navigation {
@@ -80,22 +77,21 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 900px)
-{
-.header_navigation {
-  flex-direction: row;
-}
+@media screen and (min-width: 900px) {
+  .header_navigation {
+    flex-direction: row;
+  }
 }
 
 .header_navigation a {
   display: block;
   font-size: 16px;
   padding: 16px;
-  color: #E9F6FF;
+  color: #e9f6ff;
   text-decoration: none;
 }
 
-.header_navigation{
+.header_navigation {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -105,7 +101,6 @@ h3 {
 .header_navigation a:hover {
   color: #f16900;
 }
-
 
 /* Settings for the logotype */
 .header_logo {
@@ -120,13 +115,13 @@ h3 {
 .button {
   border: none;
   color: #280274;
-  background-color: #E9F6FF;
+  background-color: #e9f6ff;
   padding: 14px 32px;
   text-align: center;
   font-size: 18px;
   cursor: pointer;
   border-radius: 50px;
- }
+}
 
 .button:hover {
   color: #f16900;
@@ -138,35 +133,30 @@ h3 {
   color: #2b2b2b;
 }
 
-
 /*!--Section 1 - The Hero screen -->*/
 /* Mobile responsiveness */
 
-.hero{
-    display: flex; 
-    flex-direction: column;
-    justify-content: start;
-    background-color: #2b2b2b;
-    color: #fff;
-    text-align: start;
-    padding: 50px;
-    background-image: url("/images/Amster.MacBook\ Pro\ 16_\ -\ 1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #2b2b2b;
+  color: #fff;
+  text-align: start;
+  padding: 50px;
+  background-image: url("/images/Amster.MacBook\ Pro\ 16_\ -\ 1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-.content .info h1{
-color: #E9F6FF;
-font-size: 42px;
-margin-bottom: 30px;
+.content .info h1 {
+  color: #e9f6ff;
+  font-size: 42px;
+  margin-bottom: 30px;
 }
 
-
-.content .info-btn{
-
+.content .info-btn {
   border: none;
   color: white;
   background-color: #f97d00;
@@ -175,52 +165,40 @@ margin-bottom: 30px;
   font-size: 18px;
   border-radius: 50px;
   text-decoration: none;
- 
- 
 }
 
-.content .info-btn:hover{
+.content .info-btn:hover {
   color: #280274;
-  background: #E9F6FF;
-
+  background: #e9f6ff;
 }
-
 
 /*Section About*/
 
-
-.about{
-
-  position: relative; 
+.about {
+  position: relative;
   margin: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  
-
 }
 
-.about h2{
+.about h2 {
   color: #fff;
   align-items: center;
   text-align: center;
-  
-  
-  
 }
 
-.text p{
+.text p {
   color: #fff;
   align-items: center;
   text-align: center;
   font-weight: normal;
   padding-bottom: 20px;
   margin: 5%;
-  
 }
 
-.back-video{
+.back-video {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,66 +206,58 @@ margin-bottom: 30px;
   height: auto;
   object-fit: contain;
 
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
-
-
 
 /*Section sights*/
 
-.sights{
+.sights {
   background-color: #280274;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 0px;
   align-items: center;
-  
-   
 }
 
-.sights h2{
-  color:#E9F6FF;
+.sights h2 {
+  color: #e9f6ff;
   align-items: center;
   text-align: center;
   padding: auto;
   margin-top: 90px;
 }
 
-
-.container-card{
-
-min-height: 80vh;
-position: relative;
-align-items: center;
-justify-content: center;
-padding: 10px 0px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 10px;
+.container-card {
+  min-height: 80vh;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 /*Card Text*/
 
 .card__price {
-text-decoration: none;
-color: #280274;
-font-size: 24px;
-font-weight: bold;
+  text-decoration: none;
+  color: #280274;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.card__title{
-
-text-decoration: none;
-color: #280274;
-font-size: 18px;
-font-weight: bold;
+.card__title {
+  text-decoration: none;
+  color: #280274;
+  font-size: 18px;
+  font-weight: bold;
 }
-
 
 /*Button*/
 
-.btn{
+.btn {
   border: none;
   outline: none;
   border-radius: 50px;
@@ -296,174 +266,148 @@ font-weight: bold;
   width: 120px;
   height: 40px;
   padding: 13px 20px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-
-.btn:hover{
+.btn:hover {
   color: #f0eded;
   background: #280274;
-
 }
 
-.btn:active{
+.btn:active {
   background-color: #2e1f13;
 }
 
-.btn:focus{
+.btn:focus {
   background-color: #280274;
   color: #fcfcfc;
 }
 
 /*Rating*/
 
-
-.rating{
+.rating {
   display: flex;
-
-
 }
 
 .rating__star:not(last-child) {
-margin-right: 6px;
-
+  margin-right: 6px;
 }
 
 /*Card*/
 
-.card{
+.card {
   text-align: left;
   width: 374px;
   min-height: 440px;
   background-color: aliceblue;
   border-radius: 4px;
   overflow: hidden;
-  
 }
 
-
-.card__img{
+.card__img {
   display: block;
   width: 100%;
   height: 217px;
   object-fit: cover;
-
 }
 
-.card__body{
+.card__body {
   padding: 43px 36px;
 }
 
-.card_price_rating{
+.card_price_rating {
   justify-content: space-between;
   display: flex;
   margin-left: 20px;
 }
 
-.card__price{
+.card__price {
   font-size: 20px;
   font-weight: 700px;
 }
 
-.card__rating{
-margin-left: 20px;
+.card__rating {
+  margin-left: 20px;
 }
 
-
-.card__title{
+.card__title {
   margin: 20px 0px 4px 20px;
   font-size: 24px;
-  
 }
 
-.card__location{
+.card__location {
   display: block;
   margin: 0px 0px 24px 20px;
   font-size: 16px;
   color: #999;
 }
 
-.card__btn{
+.card__btn {
   margin-left: 20px;
 }
 
-.card__btn{
+.card__btn {
   font-weight: bold;
-
 }
 
-.row-items{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, auto));
+.row-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   grid-gap: 2rem;
   align-items: center;
   text-align: center;
   margin-top: 2rem;
 }
 
-
-
-@media (max-width: 900px) {    
-  
-
+@media (max-width: 900px) {
   .container-card {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: none;
   }
 
   .hero {
-  
     background-position: center;
     flex-direction: column;
     text-align: center;
     align-items: center;
     background-image: url("/images/Amster.Surface Pro 8 - 1.png");
-    
-   
   }
-  .content .info h1{
-    
+  .content .info h1 {
     font-size: 48px;
     margin-bottom: 60px;
     line-height: 1.5;
-    
   }
 
-  .info-btn{
+  .info-btn {
     padding-top: 10%;
   }
 
-  .sights .text h2{
-    font-size: 56px; 
-    margin-bottom: 20px; 
+  .sights .text h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
     line-height: 1.2;
   }
-
 }
 
 @media screen and (min-width: 900px) {
   .hero {
-    padding: 14%; 
-    
-  }
-    
-  .sights .text h2{
-    font-size: 56px; 
-      margin-bottom: 20px; 
-      line-height: 1.2;
+    padding: 14%;
   }
 
-  
+  .sights .text h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
   .content .info h1 {
-  
     margin-bottom: 60px;
-    font-size: 82px; 
-    line-height: 1.0; 
+    font-size: 82px;
+    line-height: 1;
   }
 
   .content .info-btn {
-   
-    margin-top: 10px; 
+    margin-top: 10px;
   }
 
   .about .text p {
@@ -471,33 +415,30 @@ margin-left: 20px;
     padding-bottom: 10px;
     line-height: 30px;
   }
-  
+
   .about .text h2 {
     font-size: 56px;
-    line-height: 40px; 
+    line-height: 40px;
   }
 }
 
-
 /* Media query for screens with a maximum width of 599px (for mobile) */
-@media screen and (max-width: 600px) {  
+@media screen and (max-width: 600px) {
   .hero {
-    
-    padding: 30px; 
+    padding: 30px;
     background-image: url("/images/Amster.iPhone 14 & 15 Pro Max - 1.png");
   }
 
   .content .info h1 {
-    font-size: 46px; 
-    
-    margin-bottom: 20px; 
+    font-size: 46px;
+
+    margin-bottom: 20px;
     line-height: 1.2;
-    
   }
 
   .content .info-btn {
-    padding: 10px 24px; 
-    font-size: 16px; 
+    padding: 10px 24px;
+    font-size: 16px;
   }
 
   .about .text p {
@@ -505,28 +446,28 @@ margin-left: 20px;
     padding-bottom: 10px;
     line-height: 30px;
   }
-  
+
   .about .text h2 {
-    font-size: 36px; 
+    font-size: 36px;
     line-height: 40px;
   }
 
-  .back-video{
+  .back-video {
     margin: none;
-}
+  }
 
-.sights .text h2{
-  font-size: 46px; 
-    margin-bottom: 20px; 
+  .sights .text h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
     line-height: 1.2;
-}
+  }
 }
 
 /* Footer styles */
 /* Mobile responsiveness */
 .footer {
   text-align: center;
-  background: #E9F6FF;
+  background: #e9f6ff;
   color: #280274;
   padding: 16px;
 }
@@ -538,10 +479,10 @@ margin-left: 20px;
 /* Desktop version */
 @media screen and (min-width: 900px) {
   .footer {
-      padding: 20px;
+    padding: 20px;
   }
 
   .footer .copyright {
-      font-size: 14px;
+    font-size: 14px;
   }
 }

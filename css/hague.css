@@ -181,18 +181,43 @@ img {
   font-size: 16px;
   margin-bottom: 40px;
   text-shadow: 2px 2px #000000;
+  margin-top: -40px;
 }
 
 .hero h1 {
   font-size: 42px;
   margin-bottom: 30px;
   text-shadow: 2px 2px #000000;
+  margin-top: -40px;
+}
+
+.hague_btn {
+  border: none;
+  color: white;
+  background-color: rgb(60, 60, 61);
+  padding: 12px 32px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: all 0.4s;
+  margin-top: -50px;
+}
+
+.hague_btn:hover {
+  /* color: #f16900; */
+  background-image: linear-gradient(to right, orange, blue);
+  animation: slidebg 2s linear infinite;
 }
 
 /* Desktop version */
 @media screen and (min-width: 900px) {
   .hero {
     padding: 15% 20%;
+    background-position: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 
   .hero p {
@@ -226,11 +251,7 @@ img {
   /* margin-left: 20px; */
   border-radius: 10px;
 }
-/* #aboutUs img {
-  width: 400px;
-  margin: 20px;
-  border-radius: 10px;
-} */
+
 .content {
   margin: 20px 0;
 }
