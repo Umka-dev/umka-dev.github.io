@@ -642,7 +642,7 @@ img {
 .row-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, auto));
-    grid-gap 2rem;
+    grid-gap: 2rem;
     align-items: center;
     text-align: center;
     margin-top: 5rem;
