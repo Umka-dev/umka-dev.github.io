@@ -171,7 +171,7 @@ img {
   color: #fff;
   text-align: center;
   padding: 50px;
-  background-image: url("https://418-feedfactory.imgix.net/5ff8a3acde7e8633a4ab7dca/ff82f28f-a3e0-4392-9c54-9e30da07dbe3.jpg?fit=max&auto=format&ixlib=imgixjs-3.3.2&w=1920");
+  background-image: url("../images/the-hague2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,11 +180,13 @@ img {
 .hero p {
   font-size: 16px;
   margin-bottom: 40px;
+  text-shadow: 2px 2px #000000;
 }
 
 .hero h1 {
   font-size: 42px;
   margin-bottom: 30px;
+  text-shadow: 2px 2px #000000;
 }
 
 /* Desktop version */
@@ -203,19 +205,12 @@ img {
     margin-bottom: 50px;
   }
 }
-/*Eman Section*/
-/* Hero screen styles for the Hague page */
-/* Mobile responsiveness */
-.hero_hague {
-  background-image: url("https://i.ibb.co/s5hNdq6/The-Hague-city.jpg");
-}
 
-/* Desktop version */
 @media screen and (min-width: 900px) {
   .hero_hague {
-    height: 880px;
-  }
-}
+    height: 600px;
+  } 
+} 
 /*Eman's hague-page part styles Start*/
 #aboutUs {
   /* border: 2px solid red; */

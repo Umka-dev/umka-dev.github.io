@@ -435,18 +435,6 @@ img {
 
 
 /*Eman Section*/
-/* Hero screen styles for the Hague page */
-/* Mobile responsiveness */
-.hero_hague {
-    background-image: url("../images/hague.jpg");
-  }
-  
-  /* Desktop version */
-  @media screen and (min-width: 900px) {
-    .hero_hague {
-      height: 880px;
-    }
-  }
   /*Iman's index-page part styles Start*/
   #cities {
     width: 100%;
@@ -622,6 +610,7 @@ img {
     bottom: 0;
     height: 100%;
   }
+
   /*Iman's index-page part styles End*/
   
 /* Elena's index-page part styles */
