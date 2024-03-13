@@ -64,6 +64,7 @@ h3 {
   padding: 10px 10px;
   background-color: #000000;
 }
+
 @media screen and (min-width: 900px) {
   .header {
     flex-direction: row;
@@ -77,6 +78,7 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
+
 @media screen and (min-width: 900px) {
   .header_navigation {
     flex-direction: row;
@@ -372,6 +374,7 @@ h3 {
     align-items: center;
     background-image: url("/images/Amster.Surface Pro 8 - 1.png");
   }
+
   .content .info h1 {
     font-size: 48px;
     margin-bottom: 60px;
@@ -466,6 +469,11 @@ h3 {
 /* Footer styles */
 /* Mobile responsiveness */
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
   text-align: center;
   background: #e9f6ff;
   color: #280274;

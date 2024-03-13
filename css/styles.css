@@ -153,6 +153,11 @@ img {
 /* Footer styles */
 /* Mobile responsiveness */
 .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
     text-align: center;
     background: #2b2b2b;
     color: #fff;
@@ -435,27 +440,28 @@ img {
 
 
 /*Eman Section*/
-  /*Iman's index-page part styles Start*/
-  #cities {
+/*Iman's index-page part styles Start*/
+#cities {
     width: 100%;
-  }
-  .title-p {
+}
+
+.title-p {
     align-items: center;
     text-align: center;
     font-size: 48px;
     line-height: 1.1;
     padding: auto;
     margin: 40px;
-  }
-  
-  .row:after {
+}
+
+.row:after {
     content: "";
     display: flex;
     clear: both;
     margin-bottom: 25px;
-  }
-  
-  .flip-card {
+}
+
+.flip-card {
     background-color: transparent;
     width: 80%;
     height: 280px;
@@ -465,9 +471,9 @@ img {
     margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .flip-card-inner {
+}
+
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -475,28 +481,29 @@ img {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
+}
+
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
     border-radius: 8px;
-  }
-  
-  .flip-card-front,
-  .flip-card-back {
+}
+
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
-  
-  .flip-card-back {
+}
+
+.flip-card-back {
     background-color: #f1f1f1;
     transform: rotateY(180deg);
     border-radius: 8px;
-  }
-  .flip-card-1 {
+}
+
+.flip-card-1 {
     background-color: transparent;
     width: 80%;
     height: 280px;
@@ -506,9 +513,9 @@ img {
     margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .flip-card-1-inner {
+}
+
+.flip-card-1-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -516,85 +523,93 @@ img {
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .flip-card-1:hover .flip-card-1-inner {
+}
+
+.flip-card-1:hover .flip-card-1-inner {
     transform: rotateY(180deg);
     border-radius: 8px;
-  }
-  
-  .flip-card-1-front,
-  .flip-card-1-back {
+}
+
+.flip-card-1-front,
+.flip-card-1-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
-  
-  .flip-card-1-back {
+}
+
+.flip-card-1-back {
     background-color: #f1f1f1;
     transform: rotateY(180deg);
     border-radius: 8px;
-  }
-  .card-image {
+}
+
+.card-image {
     width: 100%;
     height: 280px;
     border-radius: 5px;
     object-fit: cover;
-  }
-  .container-card {
+}
+
+.container-card {
     height: 100px;
     width: 90%;
     padding: 2px 15px;
     text-align: center;
     margin-left: 17px;
     margin-top: 21%;
-  }
-  .card-title {
+}
+
+.card-title {
     font-size: 20px;
     margin-top: -50px;
     color: black;
-  }
-  
-  .card-des {
+}
+
+.card-des {
     font-size: 13px;
     color: black;
     text-align: justify;
     margin-top: 20px;
-  }
-  .follow {
+}
+
+.follow {
     margin-top: 55px;
-  }
-  
-  .follow a {
+}
+
+.follow a {
     color: white;
     /* color: black; */
     padding: 5px 14px;
     text-decoration: none;
-  }
-  .rainbow {
+}
+
+.rainbow {
     /* background-color: #a3b5c6; */
     background-color: #2b2b2b;
     border-radius: 50px;
     cursor: pointer;
     padding: 12px 32px;
     font-size: 20px;
-  }
-  .rainbow:hover {
+}
+
+.rainbow:hover {
     background-image: linear-gradient(to right, orange, blue);
     animation: slidebg 2s linear infinite;
-  }
-  @keyframes slidebg {
+}
+
+@keyframes slidebg {
     to {
-      background-position: 20vw;
+        background-position: 20vw;
     }
-  }
-  .card-button {
+}
+
+.card-button {
     margin-top: -45px;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -604,15 +619,15 @@ img {
     width: 100%;
     height: 0;
     transition: 0.5s ease;
-  }
-  
-  .container:hover .overlay {
+}
+
+.container:hover .overlay {
     bottom: 0;
     height: 100%;
-  }
+}
 
-  /*Iman's index-page part styles End*/
-  
+/*Iman's index-page part styles End*/
+
 /* Elena's index-page part styles */
 .container {
     max-width: 1200px;
