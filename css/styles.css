@@ -437,6 +437,11 @@ img {
     margin-bottom: 20px;
 }
 
+.bottom_space_30 {
+    margin-bottom: 30px;
+}
+
+
 .bottom_space_50 {
     margin-bottom: 50px;
 }
@@ -449,34 +454,12 @@ img {
 
 /*Eman Section*/
 /*Iman's index-page part styles Start*/
-#cities {
-    width: 100%;
-}
-
-.title-p {
-    align-items: center;
-    text-align: center;
-    font-size: 48px;
-    line-height: 1.1;
-    padding: auto;
-    margin: 40px;
-}
-
-.row:after {
-    content: "";
-    display: flex;
-    clear: both;
-    margin-bottom: 25px;
-}
 
 .flip-card {
-    background-color: transparent;
     width: 80%;
-    height: 280px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
+    height: 350px;
     padding: 10px;
-    margin-top: 35px;
+    margin: 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -488,12 +471,13 @@ img {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px 0 #00000033;
+    border-radius: 5px;
 }
 
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .flip-card-front,
@@ -503,22 +487,24 @@ img {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 5px;
 }
 
 .flip-card-back {
-    background-color: #f1f1f1;
+    background-color: #eaedf1;
     transform: rotateY(180deg);
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .flip-card-1 {
     background-color: transparent;
     width: 80%;
-    height: 280px;
-    background-color: #f1f1f1;
-    border-radius: 10px;
+    height: 350px;
+    border-radius: 5px;
     padding: 10px;
-    margin: 36px auto;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .flip-card-1-inner {
@@ -528,12 +514,13 @@ img {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 12px 0 #00000033;
+    border-radius: 5px;
 }
 
 .flip-card-1:hover .flip-card-1-inner {
     transform: rotateY(180deg);
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .flip-card-1-front,
@@ -546,73 +533,38 @@ img {
 }
 
 .flip-card-1-back {
-    background-color: #f1f1f1;
+    background-color: #eaedf1;
     transform: rotateY(180deg);
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .card-image {
     width: 100%;
-    height: 260px;
+    height: 330px;
     border-radius: 5px;
     object-fit: cover;
 }
 
 .container-card {
-    height: 100px;
-    width: 90%;
-    padding: 2px 15px;
+    padding: 36px 24px;
     text-align: center;
-    margin-left: 17px;
-    margin-top: 30px;
-}
-
-.card-title {
-    font-size: 20px;
-    margin-top: -50px;
-    color: black;
 }
 
 .card-des {
-    font-size: 14px;
-    color: black;
+    font-size: 16px;
+    color: #2b2b2b;
     text-align: justify;
     margin-top: 20px;
 }
 
-@keyframes slidebg {
-    to {
-        background-position: 20vw;
-    }
-}
-
-/* .card-button {
-    margin-top: -45px;
-} */
-
-.overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    /* background-color: #008cba; */
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: 0.5s ease;
-}
-
-.container:hover .overlay {
-    bottom: 0;
-    height: 100%;
-}
-
 /*Iman's index-page part styles End*/
+
+
 
 /* Elena's index-page part styles */
 .container {
     max-width: 1200px;
-    margin: 110px auto;
+    margin: 120px auto;
     display: flex;
     flex-direction: column;
     padding: 0 15px;
@@ -649,9 +601,9 @@ img {
     height: 567px;
     width: 320px;
     margin: 30px;
-    border: 1px solid #f0eded;
+    /* border: 1px solid #f0eded; */
     padding: 50px 10px;
-    border-radius: 4px;
+    border-radius: 5px;
     transition: all 1s ease 0s;
     cursor: pointer;
 
@@ -661,9 +613,9 @@ img {
     height: 180px;
     width: 180px;
     padding: 0px;
-    background: var(--bg-color);
-    box-shadow: 5px 10px 30px rgb(85 85 85/20%);
-    border-radius: 4px;
+    /* background: var(--bg-color); */
+    box-shadow: 0px 6px 12px 0 #00000033;
+    border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
 }
