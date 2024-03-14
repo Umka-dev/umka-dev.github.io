@@ -563,28 +563,14 @@ img {
 
 /* Elena's index-page part styles */
 .container {
+    display: flex;
+    flex-direction: row;
     max-width: 1200px;
-    margin: 120px auto;
+    margin: 150px auto;
     display: flex;
     flex-direction: column;
     padding: 0 15px;
     text-align: center;
-}
-
-.text h2 {
-    align-items: center;
-    text-align: center;
-    font-size: 48px;
-    line-height: 1.1;
-    padding: auto;
-    margin: 40px;
-}
-
-.text p {
-    align-items: center;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.5;
 }
 
 .row-items {
@@ -593,39 +579,33 @@ img {
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 50px;
 }
 
 .container-box {
-    /*background: var(--bg-color);*/
-    height: 567px;
+    background: var(--bg-color);
+    height: 630px;
     width: 320px;
-    margin: 30px;
-    /* border: 1px solid #f0eded; */
-    padding: 50px 10px;
+    margin: 20px;
+    border: 1px solid #f0eded;
+    padding: 30px 20px;
     border-radius: 5px;
     transition: all 1s ease 0s;
     cursor: pointer;
-
 }
 
 .container-img img {
-    height: 180px;
-    width: 180px;
+    height: 250px;
+    width: 250px;
     padding: 0px;
-    /* background: var(--bg-color); */
-    box-shadow: 0px 6px 12px 0 #00000033;
+    background: var(--bg-color);
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
 }
 
 .container-box h4 {
-    font-size: 20px;
-    font-weight: normal;
-    margin-bottom: 18px;
     padding-top: 15px;
-
 }
 
 .container-box p {
@@ -637,10 +617,9 @@ img {
 }
 
 .container-box:hover {
-    box-shadow: 5px 30px 56.1276px rgb(55 55 55/12%);
+    box-shadow: 5px 30px 34px #3737371f;
     border: 1px solid transparent;
     transform: translateY(-3px);
-
 }
 
 /* Iryna's index-page part */
